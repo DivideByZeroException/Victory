@@ -18,8 +18,8 @@
         <Label Content="" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" Name="Otvet"/>
         <Label Content="" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Name="Question"/>
         <Button Content="Стереть" HorizontalAlignment="Left" Margin="633,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.025,0.052" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Margin="46,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="O"/>
-        <TextBox HorizontalAlignment="Left" Margin="46,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="V"/>
+        <TextBox HorizontalAlignment="Left" Margin="46,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="V"/>
+        <TextBox HorizontalAlignment="Left" Margin="46,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="O"/>
         <Label Content="Добавить вопрос" HorizontalAlignment="Left" Margin="13,21,0,0" VerticalAlignment="Top"/>
         <Label Content="В" HorizontalAlignment="Left" Margin="13,47,0,0" VerticalAlignment="Top"/>
         <Label Content="О" HorizontalAlignment="Left" Margin="13,80,0,0" VerticalAlignment="Top"/>

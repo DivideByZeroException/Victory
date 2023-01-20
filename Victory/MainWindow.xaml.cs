@@ -52,6 +52,7 @@ namespace Victory
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             Otvet.Content = "";
             buttons.Clear();
             Question.Content = "";
@@ -68,8 +69,13 @@ namespace Victory
             Random rnd = new Random();
             var a = Database.GetAll();
             int value = rnd.Next(0, a.Count);
-            string data = a[value].Vopr;
-            string quest = a[value].Otvet;
+            if (a.Count == 0)
+            {
+                Database.AddToDB(new QuestionsAndAnswers("Столица России?", "Москва"));
+                a = Database.GetAll();
+            }
+            string data = a[value].Otvet;
+            string quest = a[value].Vopr;
             Question.Content = quest;
             data2 = data.ToUpper();
             char[] letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ".ToCharArray();
